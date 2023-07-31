@@ -1,14 +1,14 @@
 import Link from "next/link";
 
-const volumeOne: { [k: number]: string } = {
-  1: "one",
-  2: "two",
-  3: "three",
-};
+// const volumeOne: { [k: number]: string } = {
+//   1: "one",
+//   2: "two",
+//   3: "three",
+// };
 
-const volumes = {
-  one: volumeOne,
-};
+// const volumes = {
+//   one: volumeOne,
+// };
 
 export default function Volume({ params }: { params: { slug?: string } }) {
   return (
