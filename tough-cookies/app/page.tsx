@@ -59,7 +59,9 @@ export default function Home() {
             <nav className="mx-6 my-12 md:my-6 lg:my-0 text-3xl">
               <ul className="flex flex-col justify-start items-start gap-y-5">
                 <li className="z-10 text-[#0b85db] bg-[#3ec9b0] px-2">
-                  <Link href="/volume/one">Vol 1</Link>
+                  <Link href="/volume/one" aria-disabled>
+                    Vol 1
+                  </Link>
                 </li>
                 <li
                   className="z-20 hover:cursor-pointer text-[#3ec9b0] bg-[#0b85db] px-2"
