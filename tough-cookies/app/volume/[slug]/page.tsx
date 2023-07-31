@@ -1,10 +1,4 @@
-// { [k: number]: string }[] | false
-
-"use client";
-import Pagination from "@/components/pagination";
-import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 
 const volumeOne: { [k: number]: string } = {
   1: "one",

@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import ToughCookie from "@/static/tough-cookie-frown.png";
-import { DOMElement, useState } from "react";
-import clsx from "clsx";
 import Link from "next/link";
+import { useState } from "react";
+import clsx from "clsx";
+import ToughCookie from "@/static/tough-cookie-frown.png";
 
 function getRandomInt(max: number) {
   return Math.floor(Math.random() * max);
