@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import clsx from "clsx";
 import ToughCookie from "@/static/tough-cookie-frown.png";
 
@@ -11,8 +11,15 @@ function getRandomInt(max: number) {
 }
 
 export default function Home() {
-  const availableWidth = window.innerWidth;
-  const availableHeight = window.innerHeight;
+  // arbitrary values just to get flow working
+  let availableWidth = 1200;
+  let availableHeight = 800;
+
+  useLayoutEffect(() => {
+    availableWidth = window.innerWidth;
+    availableHeight = window.innerHeight;
+  }, []);
+
   const moarCookie = ({ randomize }: { randomize?: boolean }) => {
     return (
       <Image
