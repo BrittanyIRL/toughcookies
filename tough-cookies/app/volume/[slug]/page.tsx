@@ -12,19 +12,21 @@ import Link from "next/link";
 
 export default function Volume({ params }: { params: { slug?: string } }) {
   return (
-    <main className="flex flex-col items-center overflow-hidden w-screen h-screen bg-[#8dbf41]">
-      <h2 className="mt-12 text-6xl">Like come back soon, ya know</h2>
+    <main className="flex flex-col items-center">
       <Link className="my-6 text-4xl text-[#0b85db] bg-[#3ec9b0] px-2" href="/">
         Go away, still cooking.
       </Link>
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/tJa0c8h7yVE"
-        title="YouTube video player"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowFullScreen
-      ></iframe>
+      <div className="m-8 max-w-screen-md min-w-screen-sm">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/tJa0c8h7yVE"
+          title="YouTube video player"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        />
+      </div>
+      <p className="lg:py-4 mt-12 text-3xl">Like come back soon, ya know</p>
     </main>
   );
 
